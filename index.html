@@ -9,15 +9,17 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
-  <a-scene embedded arjs>
+  <div style="max-width: 400px;">
+    <a-scene embedded arjs>
     <a-marker preset="hiro">
       <a-entity  
       rotation="-90 0 0"
-      scale="0.1 0.1 0.1" 
+      scale="1 1 1" 
       gltf-model="model/Thinking.gltf">
       </a-entity>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
+  </div>
 </body>
 </html>
